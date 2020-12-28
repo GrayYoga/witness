@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ecwid/witness"
+	"github.com/GrayYoga/witness"
 )
 
 // Chrome chrome browser

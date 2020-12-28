@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ecwid/witness/internal/atom"
-	"github.com/ecwid/witness/pkg/devtool"
+	"github.com/GrayYoga/witness/internal/atom"
+	"github.com/GrayYoga/witness/pkg/devtool"
 )
 
 // CDPSession CDP session

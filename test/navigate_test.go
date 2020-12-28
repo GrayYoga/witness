@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ecwid/witness"
+	"github.com/GrayYoga/witness"
 
-	"github.com/ecwid/witness/pkg/chrome"
+	"github.com/GrayYoga/witness/pkg/chrome"
 )
 
 func link(t *testing.T, sess *witness.Session, l string) {

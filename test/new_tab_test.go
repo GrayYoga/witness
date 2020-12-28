@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ecwid/witness/pkg/chrome"
+	"github.com/GrayYoga/witness/pkg/chrome"
 )
 
 func TestNew5TabOpen(t *testing.T) {

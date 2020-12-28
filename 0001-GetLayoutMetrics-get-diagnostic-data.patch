@@ -1,0 +1,55 @@
+From 660526fe07f81d79b7047e33756f426804fe817d Mon Sep 17 00:00:00 2001
+From: gray <gray@ecwid.com>
+Date: Mon, 28 Dec 2020 01:29:16 +0400
+Subject: [PATCH] GetLayoutMetrics - get diagnostic data
+
+---
+ network.go | 1 +
+ session.go | 5 +++++
+ witness.go | 2 ++
+ 3 files changed, 8 insertions(+)
+
+diff --git a/network.go b/network.go
+index 5974b35..66b95c4 100644
+--- a/network.go
++++ b/network.go
+@@ -53,6 +53,7 @@ func (session *CDPSession) SetThrottling(latencyMs, downloadThroughputBps, uploa
+ 	return session.emulateNetworkConditions(false, latencyMs, downloadThroughputBps, downloadThroughputBps)
+ }
+ 
++// SetBlockedURLs blocking some resources
+ func (session *CDPSession) SetBlockedURLs(urls []string) error {
+ 	_, err := session.blockingSend("Network.setBlockedURLs", Map{
+ 		"urls": urls,
+diff --git a/session.go b/session.go
+index fb98a96..64ff81b 100644
+--- a/session.go
++++ b/session.go
+@@ -294,6 +294,11 @@ func (session *CDPSession) getContentQuads(backendNodeID int64, objectID string,
+ 	return nil, ErrElementIsOutOfViewport
+ }
+ 
++// GetLayoutMetrics ...
++func (session *CDPSession) GetLayoutMetrics() (*devtool.LayoutMetrics, error) {
++	return session.getLayoutMetrics()
++}
++
+ func (session *CDPSession) getLayoutMetrics() (*devtool.LayoutMetrics, error) {
+ 	msg, err := session.blockingSend("Page.getLayoutMetrics", Map{})
+ 	if err != nil {
+diff --git a/witness.go b/witness.go
+index fd6e3fd..d4cc41c 100644
+--- a/witness.go
++++ b/witness.go
+@@ -86,6 +86,8 @@ type Page interface {
+ 	Activate() error
+ 
+ 	Ticker(call TickerFunc) (interface{}, error)
++
++	GetLayoutMetrics() (*devtool.LayoutMetrics, error)
+ }
+ 
+ // Findable interface to find element
+-- 
+2.28.0
+

@@ -1,6 +1,6 @@
 package witness
 
-import "github.com/ecwid/witness/pkg/devtool"
+import "github.com/GrayYoga/witness/pkg/devtool"
 
 func (session *CDPSession) releaseObject(objectID string) error {
 	_, err := session.blockingSend("Runtime.releaseObject", Map{"objectId": objectID})

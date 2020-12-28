@@ -1,8 +1,8 @@
 package witness
 
 import (
-	"github.com/ecwid/witness/pkg/devtool"
-	"github.com/ecwid/witness/pkg/mobile"
+	"github.com/GrayYoga/witness/pkg/devtool"
+	"github.com/GrayYoga/witness/pkg/mobile"
 )
 
 // Session entry point session

@@ -3,8 +3,8 @@ package witness
 import (
 	"time"
 
-	"github.com/ecwid/witness/internal/atom"
-	"github.com/ecwid/witness/pkg/devtool"
+	"github.com/GrayYoga/witness/internal/atom"
+	"github.com/GrayYoga/witness/pkg/devtool"
 )
 
 func (e *element) Release() error {
