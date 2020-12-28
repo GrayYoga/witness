@@ -6,8 +6,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/ecwid/witness"
-	"github.com/ecwid/witness/pkg/devtool"
+	"github.com/GrayYoga/witness"
+	"github.com/GrayYoga/witness/pkg/devtool"
 )
 
 // Rec har recorder

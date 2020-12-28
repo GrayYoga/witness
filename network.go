@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 
-	"github.com/ecwid/witness/pkg/devtool"
+	"github.com/GrayYoga/witness/pkg/devtool"
 )
 
 // ClearBrowserCookies ...

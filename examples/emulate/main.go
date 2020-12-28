@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/ecwid/witness/pkg/chrome"
-	"github.com/ecwid/witness/pkg/mobile"
+	"github.com/GrayYoga/witness/pkg/chrome"
+	"github.com/GrayYoga/witness/pkg/mobile"
 )
 
 func main() {

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ecwid/witness"
-	"github.com/ecwid/witness/pkg/chrome"
+	"github.com/GrayYoga/witness"
+	"github.com/GrayYoga/witness/pkg/chrome"
 )
 
 func TestFrameRefresh(t *testing.T) {

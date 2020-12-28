@@ -1,6 +1,6 @@
 package mobile
 
-import "github.com/ecwid/witness/pkg/devtool"
+import "github.com/GrayYoga/witness/pkg/devtool"
 
 // Device device description
 type Device struct {

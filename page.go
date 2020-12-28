@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ecwid/witness/pkg/devtool"
+	"github.com/GrayYoga/witness/pkg/devtool"
 )
 
 var blankPage = "about:blank"

@@ -3,7 +3,7 @@ witness is golang client driving Chrome browser using the Chrome DevTools Protoc
 Witness has Selenium like interface. It is experimental project, backward compatibility is not guaranteed!
 
 ## Installation
-`go get -u github.com/ecwid/witness`
+`go get -u github.com/GrayYoga/witness`
 
 ## How to use
 
@@ -14,8 +14,8 @@ package main
 import (
 	"time"
 
-	"github.com/ecwid/witness"
-	"github.com/ecwid/witness/pkg/chrome"
+	"github.com/GrayYoga/witness"
+	"github.com/GrayYoga/witness/pkg/chrome"
 )
 
 func main() {
@@ -148,4 +148,4 @@ type Element interface {
 }
 ```
 
-See https://github.com/Ecwid/witness/tree/master/examples for more examples
+See https://github.com/GrayYoga/witness/tree/master/examples for more examples

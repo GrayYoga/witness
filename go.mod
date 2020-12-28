@@ -1,4 +1,4 @@
-module github.com/ecwid/witness
+module github.com/GrayYoga/witness
 
 go 1.12
 
